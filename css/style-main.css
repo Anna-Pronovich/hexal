@@ -145,6 +145,7 @@
 }
 
 .info-author {
+    position: relative;
     width: 818px;
     height: 270px;
     margin: 0 auto;
@@ -167,6 +168,7 @@ h3 {
     margin: 0;
     color: #d7fcf5;
     font-size: 30px;
+    font-weight: 200;
 }
 
 h4 {
@@ -183,4 +185,68 @@ p {
     color: #d7fcf5;
     font-size: 11px;
     font-weight: 500;
+}
+.social-networks {
+    position: absolute;
+    bottom: 55px;
+    right: 22px;
+    display: flex;
+    width: 144px;
+    height: 24px;  
+    margin: 0;
+    padding: 0;
+}
+
+.social-networks li {
+    list-style-type: none;
+}
+
+.social-networks a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height:  24px; 
+    color: #07ad97;
+    background-color: #a4dbd4;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-networks a:hover {
+    color: #d7fcf5;
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+  }
+
+.social-networks .icon-twitter {
+    background-color: #6ccbbe;
+}
+.icon-twitter:before {
+    content: "\f099";
+}
+  
+.social-networks .icon-google {
+    background-color: #7ed0c5;
+}
+
+.icon-google:before {
+    content: "\e901";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-pinterest-p:before {
+    content: "\f231";
+}
+
+.social-networks .icon-basketball{
+  background-color: #6dcbbe;
+}
+.icon-basketball:before {
+    content: "\e902";
 }
