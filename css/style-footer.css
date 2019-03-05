@@ -1,6 +1,27 @@
 footer {
+    position: relative;
     font-family: 'Maven Pro', sans-serif;
     background: #323232;
+}
+
+footer:before {
+    content: '';
+    width: 962px;
+    height: 1px;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    background: #2b2b2b;
+}
+
+footer:after {
+    content: '';
+    width: 962px;
+    height: 1px;
+    position: absolute;
+    bottom: 53px;
+    right: 28px;
+    background: #2b2b2b;
 }
 
 footer h3 {
@@ -14,10 +35,14 @@ footer h4 {
     word-spacing: 2px;
 }
 
+.wrapper-form-contacts {
+    display: flex;
+}
+
 .form-style {
     position: relative;
     width: 580px;
-    padding: 58px 10px 60px 120px;
+    padding: 58px 20px 60px 120px;
     font-family: 'Lato', 'Verdana', sans-serif;
 }
 
@@ -85,10 +110,56 @@ button:hover {
     color: #2eb398;
 }
 
+.add-information {
+    width:180px;
+    padding-top: 116px;
+    font-size: 11px;
+    text-align: justify; 
+}
+
+.add-information p, a{
+    color: #e0e0e0;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+}
+
+.icon-phone:before {
+    content: "\e900";
+  }
+  .icon-envelope:before {
+    content: "\f003";
+  }
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+
+.contacts div{
+    margin: 4px 0; 
+}
+
+.contacts span {
+    padding-right: 14px;
+    font-size: 12px;
+     color: #2eb398;
+}
+
+.contacts a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .footer-text {
     height: 40px;
     padding: 2px 40px;
     font-size: 9px;
     color:#3d3d3d;
     background-color: #222222;
+}
+
+.footer-text p {
+    color:#3d3d3d;
 }
